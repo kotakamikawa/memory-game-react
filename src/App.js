@@ -57,6 +57,11 @@ function App() {
   };
 
   const hadleClickCard = async (index, value) => {
+    //１枚目と同じカードをクリックした時
+    if(index === gameState.firstCardIndex){
+      return
+    }
+    
     if(diableCard){
       return
     }
