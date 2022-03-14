@@ -1,38 +1,68 @@
-.App {
+.cotainer{
+  display: flex;
+  justify-content: center; /* 主軸方向に中央寄せ */
+  align-items: center;     /* 交差軸方向に中央寄せ */
+  flex-direction: column;  /* 縦方向に並べる */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#players {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 340px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#field {
+  width: 350px;
+  height: 440px;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.turn{
+  width: 150px;
+  font-size: 20px;
+  color: #000;
+  border-radius: 10px;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+  border: 4px solid rgb(255, 230, 0);
+}
+
+.not-turn{
+  width: 150px;
+  font-size: 20px;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+
+.card {
+  width: 80px;
+  height: 100px;
+  line-height: 80px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  box-shadow: gray 2px 2px;
+  background: white;
+  float: left;
+  cursor: pointer;
+}
+
+.btn-gamestart {
+  color: #000;
+  font-size: 20px;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+
+}
+
+.btn-gamestart:hover {
+  background: #FFFF99;
 }
